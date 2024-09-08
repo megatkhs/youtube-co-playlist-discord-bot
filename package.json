@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "build": "tsup",
     "start": "node ./dist/index.mjs",
     "format": "biome format --write ./src"
@@ -14,7 +15,9 @@
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "@tsconfig/node20": "20.1.4",
+    "nodemon": "3.1.4",
     "prisma": "5.19.1",
+    "ts-node": "10.9.2",
     "tsup": "8.2.4",
     "typescript": "5.5.4"
   },
