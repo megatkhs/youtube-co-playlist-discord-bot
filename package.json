@@ -12,9 +12,11 @@
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "@tsconfig/node20": "20.1.4",
+    "prisma": "5.19.1",
     "typescript": "5.5.4"
   },
   "dependencies": {
+    "@prisma/client": "5.19.1",
     "@types/node": "22.5.4"
   }
 }
