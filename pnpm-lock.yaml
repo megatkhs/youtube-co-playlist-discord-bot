@@ -7,10 +7,20 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@types/node':
+        specifier: 22.5.4
+        version: 22.5.4
     devDependencies:
       '@biomejs/biome':
         specifier: 1.8.3
         version: 1.8.3
+      '@tsconfig/node20':
+        specifier: 20.1.4
+        version: 20.1.4
+      typescript:
+        specifier: 5.5.4
+        version: 5.5.4
 
 packages:
 
@@ -67,6 +77,20 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@tsconfig/node20@20.1.4':
+    resolution: {integrity: sha512-sqgsT69YFeLWf5NtJ4Xq/xAF8p4ZQHlmGW74Nu2tD4+g5fAsposc4ZfaaPixVu4y01BEiDCWLRDCvDM5JOsRxg==}
+
+  '@types/node@22.5.4':
+    resolution: {integrity: sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==}
+
+  typescript@5.5.4:
+    resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+
 snapshots:
 
   '@biomejs/biome@1.8.3':
@@ -103,3 +127,13 @@ snapshots:
 
   '@biomejs/cli-win32-x64@1.8.3':
     optional: true
+
+  '@tsconfig/node20@20.1.4': {}
+
+  '@types/node@22.5.4':
+    dependencies:
+      undici-types: 6.19.8
+
+  typescript@5.5.4: {}
+
+  undici-types@6.19.8: {}

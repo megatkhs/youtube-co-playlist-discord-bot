@@ -1,0 +1,10 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "@tsconfig/node20/tsconfig.json",
+	"files": ["src/index.ts"],
+	"compilerOptions": {
+		"lib": ["ES2023", "DOM"],
+		"rootDir": "./src",
+		"outDir": "./dist"
+	}
+}
