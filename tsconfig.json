@@ -3,8 +3,15 @@
 	"extends": "@tsconfig/node20/tsconfig.json",
 	"files": ["src/index.ts"],
 	"compilerOptions": {
+		"module": "es2022",
+		"moduleResolution": "Node",
 		"lib": ["ES2023", "DOM"],
 		"rootDir": "./src",
-		"outDir": "./dist"
-	}
+		"outDir": "./dist",
+		"baseUrl": "./src",
+		"paths": {
+			"@/*": ["./*"]
+		}
+	},
+	"include": ["**/*.ts"]
 }
