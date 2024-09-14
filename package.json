@@ -30,5 +30,10 @@
     "@types/node": "22.5.4",
     "discord.js": "14.16.1",
     "valibot": "0.41.0"
-  }
+  },
+  "engines": {
+    "pnpm": "9.10.0",
+    "node": "20.17.0"
+  },
+  "packageManager": "pnpm@9.10.0"
 }
