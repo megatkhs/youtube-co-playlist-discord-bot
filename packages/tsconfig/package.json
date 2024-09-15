@@ -1,0 +1,6 @@
+{
+    "name": "@packages/tsconfig",
+    "dependencies": {
+        "@tsconfig/node20": "20.1.4"
+    }
+}

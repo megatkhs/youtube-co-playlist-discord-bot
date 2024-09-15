@@ -3,7 +3,7 @@ import type { ClientEvents } from "discord.js";
 
 /** イベントハンドラを定義する */
 export function defineEvent<K extends keyof ClientEvents>(
-	module: EventModule<K>,
+  module: EventModule<K>,
 ): EventModule<K> {
-	return module;
+  return module;
 }

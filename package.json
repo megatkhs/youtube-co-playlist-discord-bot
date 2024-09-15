@@ -1,9 +1,6 @@
 {
-  "name": "app",
-  "version": "1.0.0",
-  "description": "",
-  "type": "module",
-  "bin": "./dist/index.mjs",
+  "name": "youtube-co-playlist-discord-bot",
+  "private": true,
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "start": "tsx src/index.ts",
@@ -17,21 +14,12 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
-    "@tsconfig/node20": "20.1.4",
-    "nodemon": "3.1.4",
-    "prisma": "5.19.1",
-    "tsconfig-paths": "4.2.0",
-    "tsup": "8.2.4",
-    "tsx": "4.19.0",
+    "turbo": "2.1.2",
     "typescript": "5.5.4"
   },
-  "dependencies": {
-    "@prisma/client": "5.19.1",
-    "@types/node": "22.5.4",
-    "discord.js": "14.16.1",
-    "valibot": "0.41.0"
-  },
   "engines": {
+    "npm": "use pnpm please!",
+    "yarn": "use pnpm please!",
     "pnpm": "9.10.0",
     "node": "20.17.0"
   },
