@@ -2,9 +2,9 @@
   "name": "youtube-co-playlist-discord-bot",
   "private": true,
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "start": "tsx src/index.ts",
-    "format": "biome format --write ./src"
+    "dev": "turbo dev",
+    "fix": "turbo fix",
+    "format": "turbo format"
   },
   "keywords": [],
   "author": "",
