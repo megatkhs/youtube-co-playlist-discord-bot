@@ -1,0 +1,14 @@
+{
+    "name": "@packages/db",
+    "main": "./src/index.ts",
+    "scripts": {
+        "fix": "biome lint --write ./src",
+        "format": "biome format --write ./src",
+        "check-types": "tsc --noEmit"
+    },
+    "dependencies": {
+        "prisma": "5.19.1",
+        "@prisma/client": "5.19.1",
+        "@packages/tsconfig": "workspace:*"
+    }
+}
