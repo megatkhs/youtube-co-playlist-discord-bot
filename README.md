@@ -6,7 +6,7 @@ VSCodeの[開発コンテナ](https://code.visualstudio.com/docs/devcontainers/c
 開発コンテナを利用できるように環境をセットアップすることで開発を開始できます。
 
 ### 環境変数の準備
-開発環境の準備については、Discussionの #5 を確認してください。
+開発環境の準備については、Discussionの [#5](https://github.com/megatkhs/youtube-co-playlist-discord-bot/discussions/5) を確認してください。
 
 ### 依存パッケージのインストール
 開発コンテナ内で、下記コマンドを実行してください。
