@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
-    "dev": "remix vite:dev",
+    "dev": "pnpm with-env remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
     "@remix-run/node": "^2.12.0",
