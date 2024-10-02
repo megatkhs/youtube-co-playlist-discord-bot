@@ -9,7 +9,8 @@
 			"extensions": [
 				"MS-CEINTL.vscode-language-pack-ja",
 				"biomejs.biome",
-				"Prisma.prisma"
+				"Prisma.prisma",
+				"cweijan.vscode-redis-client"
 			]
 		}
 	}
