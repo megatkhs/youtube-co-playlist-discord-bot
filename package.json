@@ -23,8 +23,8 @@
   "engines": {
     "npm": "use pnpm please!",
     "yarn": "use pnpm please!",
-    "pnpm": "9.10.0",
-    "node": "20.17.0"
+    "pnpm": ">= 9 < 10",
+    "node": ">= 20 < 21"
   },
   "packageManager": "pnpm@9.10.0"
 }
