@@ -11,6 +11,7 @@
     "db:migrate:dev": "pnpm with-env prisma migrate dev",
     "db:push": "pnpm with-env prisma db push",
     "generate": "pnpm with-env prisma generate",
+    "studio": "pnpm with-env prisma studio",
     "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
