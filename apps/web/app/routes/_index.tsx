@@ -1,5 +1,6 @@
-import type { MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
+import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
+import { Link, useLoaderData } from "@remix-run/react";
+import { isAuthenticated } from "~/auth.server";
 
 export const meta: MetaFunction = () => {
   return [
@@ -8,7 +9,17 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+export const loader = async ({ request }: LoaderFunctionArgs) => {
+  const userData = await isAuthenticated(request);
+
+  console.log(userData);
+
+  return { userData };
+};
+
 export default function Index() {
+  const { userData } = useLoaderData<typeof loader>();
+
   return (
     <div className="flex h-screen items-center justify-center">
       <div className="flex flex-col items-center gap-16">
@@ -17,7 +28,11 @@ export default function Index() {
             共有プレイリスト作成ボット Webダッシュボード
           </h1>
 
-          <Link to="/join">アカウント登録する</Link>
+          {userData === null ? (
+            <Link to="/auth">Discordアカウントでログイン</Link>
+          ) : (
+            <Link to="/signout">ログアウト</Link>
+          )}
         </header>
       </div>
     </div>
