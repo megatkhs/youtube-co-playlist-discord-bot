@@ -12,6 +12,7 @@
     "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
+    "@packages/db": "workspace:*",
     "@remix-run/node": "^2.12.0",
     "@remix-run/react": "^2.12.0",
     "@remix-run/serve": "^2.12.0",

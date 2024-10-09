@@ -42,6 +42,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@packages/db':
+        specifier: workspace:*
+        version: link:../../packages/db
       '@remix-run/node':
         specifier: ^2.12.0
         version: 2.12.0(typescript@5.5.4)
