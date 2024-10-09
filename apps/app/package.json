@@ -10,7 +10,6 @@
     "dependencies": {
         "@packages/db": "workspace:*",
         "@packages/tsconfig": "workspace:*",
-        "discord.js": "14.16.1",
         "tsx": "4.19.0",
         "valibot": "0.41.0"
     }
